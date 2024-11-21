@@ -11,7 +11,7 @@ variable "region" {
 }
 
 variable "deployment_name" {
-  default = "primacloudLAB-eks"
+  default = "primacloudlabach-eks"
 }
 
 variable "security_namespace" {
