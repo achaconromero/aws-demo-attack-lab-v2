@@ -253,6 +253,8 @@ stages:
             displayName: "Deploying Nginx Application"
           - bash: kubectl get svc -A | grep elb | awk '{print $5}'
             displayName: URL to Attack
+          - bash: kubectl create ns twistlock
+            displayname: "Create Namespace"
     - stage: defender_deployment
       displayName: Apply Defender (Prisma)
       dependsOn: 
